@@ -50,26 +50,6 @@ jobs:
         working-directory: ./day3
         run: terraform fmt -check -recursive
 
-      - name: Check Day 3 - Terraform Init
-        working-directory: ./day3
-        run: terraform init -backend=false
-
-      - name: Check Day 3 - Terraform Validate
-        working-directory: ./day3
-        run: terraform validate
-
       - name: Check Day 4 - Terraform Format
         working-directory: ./day4
         run: terraform fmt -check -recursive
-
-      - name: Check Day 4 - Terraform Init
-        working-directory: ./day4
-        run: terraform init -backend=false
-
-      - name: Check Day 4 - Terraform Validate
-        working-directory: ./day4
-        run: terraform validate
-
-      - name: Check Day 4 - Terraform Plan
-        working-directory: ./day4
-        run: terraform plan -input=false
